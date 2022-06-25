@@ -28,7 +28,7 @@ export default {
 
 
     <template #default="{ close }">
-        <div class="">
+        <div>
           
           <div class="flex justify-end text-2xl">
             <button @click="close">
@@ -52,7 +52,7 @@ export default {
 .vts-drawer__content {
   padding: 20px;
   color: #FFF;
-  background: #B10021;
+  background: #9D012A;
   transition: 0.3s ease transform;
 }
 

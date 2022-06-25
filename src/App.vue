@@ -5,6 +5,7 @@ const components = { RouterLink, RouterView }
 
 <template>
   <div id="wrapper">
+    <Menu />
     <RouterView />
   </div>
 </template>
@@ -17,17 +18,9 @@ header {
   background: #D9D9D9;
 }
 .router-btn {
-  background: #B10021;
+  background: #8B0226;
   color: white;
 }
-.title {
-  color: #B10021;
-  font-size: 45px;
-  font-weight: bolder;
-}
-#wrapper {width:95%;  margin: 0 auto; }
-#header {width:100%; }
-#content {width:100%; }
 </style>
 
 

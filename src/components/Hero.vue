@@ -13,7 +13,7 @@ export default {
         <Menu />
       </div>
       <div class="title-container text-4xl w-full text-center">
-        <h1 class="title mt-8">TEST APP</h1>
+        <h1 class="title mt-8">FLASHCARDS</h1>
       </div>
       <nav class="flex justify-center items-center">
         <RouterLink to="/" class="router-btn m-1 p-2 rounded-3xl">Home</RouterLink>
@@ -51,29 +51,4 @@ h1 {
   text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
   margin-bottom: 40px;
 }
-        
-button {
-  background: #098191;
-  transition: background ease .25s;
-  border-radius: 5px;
-  display: inline-block;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  margin: 0;
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 1.2rem;
-  cursor: pointer;
-  text-align: center;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-button:hover {
-  background: #63b6b8
-}
-button:focus {
-  outline: 1px solid #fff;
-  outline-offset: -4px;
-}
-   
 </style>
