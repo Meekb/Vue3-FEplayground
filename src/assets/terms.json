@@ -1,0 +1,62 @@
+{
+  "data": {
+    "terms": [
+      {
+        "term": "Bill of Lading",
+        "definition": "An itemized list of goods contained in a shipment."
+      },
+      {
+        "term": "Bobtail",
+        "definition": "A tractor operating without a trailer. Also refers to a straight truck."
+      },
+      {
+        "term": "CDL (Commercial Drivers License)",
+        "definition": "License which authorizes an idividual to operate commercial motor vehicles and buses over 26,000 pounds gross vehicle weight."
+      },
+      {
+        "term": "Landing Gear",
+        "definition": "Retractable legs which support the front of a semitrailer when it is not coupled to a tractor."
+      },
+      {
+        "term": "Reefer",
+        "definition": "Refrigerated trailer with insulate walls and a self-powered refigeration unit. Most commonly used for transporting food."
+      },
+      {
+        "term": "Sleeper",
+        "definition": "Sleeping compartment mounted behind a truck cab, sometimes attached to the cab or even designed to be an integral part of it."
+      },
+      {
+        "term": "Sliding the Fifth Wheel",
+        "definition": "Fifth wheel mounted to a mechanism that allows it to be moved back and forth for the purpose of adjusting the distribution of weight on the tractor's axles."
+      },
+      {
+        "term": "Straight Truck",
+        "definition": "Vehicle which carries cargo in a body mounted to its chassis, rather than on a trailer towed by a vehicle."
+      },
+      {
+        "term": "Owner Operator",
+        "definition": "Truck driver who owns and operates their own truck."
+      },
+      {
+        "term": "Over-the-Road Driver",
+        "definition": "Truck driver who travels cross-country to deliver freight and usually sleeps within a berth in the truck cab. Typically averages over 100k miles per year."
+      },
+      {
+        "term": "Tractor",
+        "definition": "Truck designed to pull a semitrailer by means of a fifth wheel mounted over the reat axle."
+      },
+      {
+        "term": "JIT (Just-In-Time)",
+        "definition": "Manufacturing system which depends on frequent, small deliveries of parts and supplies to keep on-site inventory to a minimum."
+      },
+      {
+        "term": "Cartage Company",
+        "definition": "Company that provides local (within town, city, or municipality) pick-up and delivery."
+      },
+      {
+        "term": "Hours-of-Service",
+        "definition": "US Department of Transportation safety regulations which govern the hours of service of commercial vehicle drivers engaged in interstate trucking operations."
+      }
+    ]
+  }
+}
