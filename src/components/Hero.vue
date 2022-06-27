@@ -16,8 +16,7 @@ export default {
         <h1 class="title mt-8">FLASHCARDS</h1>
       </div>
       <nav class="flex justify-center items-center">
-        <RouterLink to="/" class="router-btn m-1 p-2 rounded-3xl">Home</RouterLink>
-        <RouterLink to="/about" class="router-btn m-1 p-2 rounded-3xl">About</RouterLink>
+        <img src="src/assets/arrow-down-angle-svgrepo-com.svg" alt="arrow-down for main content"/>
       </nav>
     </div>
   </section>

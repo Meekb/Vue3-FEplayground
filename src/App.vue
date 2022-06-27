@@ -5,7 +5,6 @@ const components = { RouterLink, RouterView }
 
 <template>
   <div id="wrapper">
-    <Menu />
     <RouterView />
   </div>
 </template>

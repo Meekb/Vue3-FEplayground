@@ -20,8 +20,8 @@ export default {
         },
         {
           text: 'Services',
-          on: {
-            click: console.log
+          bind: {
+            to: '/services'
           }
         },
         {

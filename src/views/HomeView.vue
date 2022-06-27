@@ -21,12 +21,13 @@ export default {
     <main id="content">
       <h2 class="text-2xl text-center mt-10">Trucking Terms</h2>
       <h3 class="text-xl text-center mb-10">Hover over a card to flip it</h3>
-      <div class="flex justify-center items-center">
-        <div class="container w-full grid grid-cols-4 p-1 gap-y-1 gap-x-1">
+      <div class="grid-container flex justify-center items-center">
+        <div class="container">
           <Card
             v-for="item in terms" :key="item"
             :term="item.term"
             :definition="item.definition"
+            class="card"
           />
         </div>
       </div>
@@ -36,10 +37,38 @@ export default {
 </template>
 
 <style scoped>
-@media screen and (max-width: 780px) {
+.card {
+  grid-area: 'service';
+}
+.container {
+  display: grid;
+  grid-template: 'service service service service';
+}
+@media (max-width: 800px) {
   .container {
-    grid-auto-flow: column;
+    display: grid;
+    grid-template: 'service service service';
+  }
+}
+@media screen and (max-width: 700px) {
+
+}
+@media screen and (max-width: 700px) {
+  .grid-container {
+    /* border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center; */
+  }
+  .card {
+    /* grid-area: 'service' */
+  }
+  .container {
+    /* display: grid; */
+    /* grid-template: 'service'; */
   }
 }
 </style>
 
+<!-- w-full grid grid-cols-4 p-1 gap-y-1 gap-x-1 -->
