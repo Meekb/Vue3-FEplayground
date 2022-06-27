@@ -1,6 +1,6 @@
-# v3-learn
+# Vue3-mini
 
-This template should help get you started developing with Vue 3 in Vite.
+A Vue 3 project with [Vite](https://vitejs.dev/), [Vutensils](https://vuetensils.com/), [Histoire](https://histoire.dev/), and [Playwright](https://playwright.dev/). This is currently my learning playground for FE technologies.
 
 ## Recommended IDE Setup
 
