@@ -17,22 +17,25 @@ export default {
 
 <template>
   <div id="wrapper">
-    <Hero id="header" />
+    <Hero id="header" hero-image-src="src/assets/arrow-down-angle-svgrepo-com.svg" />
     <main id="content">
-      <h2 class="text-2xl text-center mt-10">Trucking Terms</h2>
-      <h3 class="text-xl text-center mb-10">Hover over a card to flip it</h3>
-      <div class="grid-container flex justify-center items-center">
-        <div class="container">
-          <Card
-            v-for="item in terms" :key="item"
-            :term="item.term"
-            :definition="item.definition"
-            class="card"
-          />
+      <!-- Flashcards of trucking terms -->
+      <section>
+        <h2 class="text-2xl text-center mt-10 font-bold">Trucking Terms</h2>
+        <h3 class="text-xl text-center mb-10">Hover over a card to flip it</h3>
+        <div class="grid-container flex justify-center items-center">
+          <div class="container">
+            <Card
+              v-for="item in terms" :key="item"
+              :term="item.term"
+              :definition="item.definition"
+              class="card"
+            />
+          </div>
         </div>
-      </div>
-    </main>
 
+      </section>
+    </main>
   </div>
 </template>
 
@@ -43,30 +46,38 @@ export default {
 .container {
   display: grid;
   grid-template: 'service service service service';
+  justify-content: center;
 }
-@media (max-width: 800px) {
+
+@media (max-width: 1024px) {
   .container {
     display: grid;
     grid-template: 'service service service';
-  }
-}
-@media screen and (max-width: 700px) {
-
-}
-@media screen and (max-width: 700px) {
-  .grid-container {
-    /* border: 2px solid blue;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-content: center; */
   }
-  .card {
-    /* grid-area: 'service' */
-  }
+}
+
+@media (max-width: 900px) {
   .container {
-    /* display: grid; */
-    /* grid-template: 'service'; */
+    display: grid;
+    grid-template: 'service service service';
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: grid;
+    grid-template: 'service service';
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+ .container {
+    display: grid;
+    grid-template: 'service';
+    justify-content: center;
   }
 }
 </style>

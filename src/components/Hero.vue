@@ -13,10 +13,10 @@ export default {
         <Menu />
       </div>
       <div class="title-container text-4xl w-full text-center">
-        <h1 class="title mt-8">FLASHCARDS</h1>
+        <h1 class="mt-64 text-red-500">FLASHCARDS</h1>
       </div>
       <nav class="flex justify-center items-center">
-        <img src="src/assets/arrow-down-angle-svgrepo-com.svg" alt="arrow-down for main content"/>
+        <img src="src/assets/arrow-down-angle-svgrepo-com.svg" alt="arrow-down for main content" :style="{ width: '100px', marginTop: '150px' }"/>
       </nav>
     </div>
   </section>
@@ -30,10 +30,10 @@ export default {
   flex-direction: column;
   text-align: center;
   width: 100%;
-  height: 50vh; /* if you don't want it to take up the full screen, reduce this number */
+  height: 100vh; /* if you don't want it to take up the full screen, reduce this number */
   overflow: hidden;
   background-size: cover !important;
-  background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(qijin-xu.png) no-repeat center center scroll;
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url('src/assets/unload.jpg') no-repeat center center scroll;
 }
 
 .hamburger {
@@ -43,11 +43,11 @@ export default {
 h1 {
   font-style: normal;
   font-weight: bold;
-  color: #eee;
+  color: #8B0226;
   font-size: 11vmin;
   letter-spacing: 0.03em;
   line-height: 1;
-  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
+  text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.8);
   margin-bottom: 40px;
 }
 </style>

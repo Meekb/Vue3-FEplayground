@@ -3,7 +3,7 @@ import Menu from '@/components/Menu.vue'
 export default {
   components: { Menu },
 }
-</script>>
+</script>
 
 <template>
   <Story

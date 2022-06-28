@@ -9,16 +9,6 @@ export default {
       type: String
     }
   },
-  data() {
-    return {
-      cardFlipped: false,
-    }
-  },
-  methods: {
-    flipCard() {
-      this.cardFlipped = !this.cardFlipped
-    },
-  }
 }
 </script>
 
@@ -42,10 +32,31 @@ export default {
   background-color: transparent;
   width: 300px;
   height: 200px;
-  perspective: 1000px; /* Creates the flipping 3D effect / optional */
+  perspective: 1000px; /* Creates the flip effect */
 }
 
-/* This container is needed to position the front and back side */
+@media (max-width: 754px) {
+  .flip-card {
+    width: 300px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .flip-card {
+    width: 320px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .flip-card {
+    width: 400px;
+    height: 200px;
+  }
+}
+
+/* Positions the front and back side of the card */
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -55,12 +66,11 @@ export default {
   transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
+/* Horizontal flip with mouseover */
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
-/* Position the front and back side */
 .flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;

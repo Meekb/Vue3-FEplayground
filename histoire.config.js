@@ -3,7 +3,8 @@ import { defaultColors } from 'histoire'
 export default defineConfig({
   // your Histoire configuration
   theme: {
-    title: 'Flashcards',
+    title: 'Playground',
+    setupFile: '/src/histoire.setup.js',
     colors: {
       gray: defaultColors.zinc,
       primary: defaultColors.rose
