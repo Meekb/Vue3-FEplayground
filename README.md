@@ -5,10 +5,11 @@ A Vue 3 project with [Vite](https://vitejs.dev/), [Pinia](https://pinia.vuejs.or
 Building out a mock site for a trucking transportation related org. Pinia is not being utilized yet.
 
 ## Components:
-
+  
+  * Hero made with [Hero Generator](https://hero-generator.netlify.app/)
+  * Flashcard flips with CSS - plans to shift to a Pinia state
   * Menu uses Vuetensils VDrawer to manage attributes `aria-haspopup` and `aria-expanded`  
   * MenuLinks uses Vuetensils VBtn and a v-for to distrubute data and render `RouterLink` or `<a>` accordingly  
-  * Flashcard flips with CSS - plans to shift to a Pinia state  
   * Service component wrapped in a `RouterLink`
   
 ## Current Views
