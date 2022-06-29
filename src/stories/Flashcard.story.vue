@@ -1,6 +1,6 @@
 <script setup>
-import Card from '@/components/Card.vue'
-const components = { Card }
+import Flashcard from '@/components/Flashcard.vue'
+const components = { Flashcard }
 </script>>
 
 <template>
@@ -9,11 +9,11 @@ const components = { Card }
     :layout="{ type: 'grid', width: 350 }"
   >
     <Variant title="Default - Empty Card">
-      <Card term="" definition="" />
+      <Flashcard term="" definition="" />
     </Variant>
 
     <Variant title="Card with Term and Definition">
-      <Card term="Bull Hauler" definition="A truck and driver hauling live cattle (not to be confused with a hog hauler)." />
+      <Flashcard term="Bull Hauler" definition="A truck and driver hauling live cattle (not to be confused with a hog hauler)." />
     </Variant>
 
   </Story>

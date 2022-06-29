@@ -1,10 +1,10 @@
 <script>
 import Hero from '@/components/Hero.vue'
-import Card from '@/components/Card.vue'
+import Flashcard from '@/components/Flashcard.vue'
 import terms from '@/assets/terms.json'
 import EventButton from '../components/EventButton.vue'
 export default {
-  components: { Hero, Card, EventButton },
+  components: { Hero, Flashcard, EventButton },
   data() {
    return  {
       terms: [],
@@ -31,7 +31,7 @@ export default {
         <h3 class="text-xl text-center mb-10">Hover over a card to flip it</h3>
         <div class="grid-container flex justify-center items-center">
           <div class="container">
-            <Card
+            <Flashcard
               v-for="item in terms" :key="item"
               :term="item.term"
               :definition="item.definition"
