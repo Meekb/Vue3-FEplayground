@@ -33,7 +33,7 @@ export default {
   height: 100vh; /* if you don't want it to take up the full screen, reduce this number */
   overflow: hidden;
   background-size: cover !important;
-  background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url('src/assets/unload.jpg') no-repeat center center scroll;
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 24%, rgba(119,14,14,0.65) 100%), url(qijin-xu.png) no-repeat center center scroll;
 }
 
 .hamburger {

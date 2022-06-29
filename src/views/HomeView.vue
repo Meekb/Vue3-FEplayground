@@ -2,8 +2,9 @@
 import Hero from '@/components/Hero.vue'
 import Card from '@/components/Card.vue'
 import terms from '@/assets/terms.json'
+import EventButton from '../components/EventButton.vue'
 export default {
-  components: { Hero, Card },
+  components: { Hero, Card, EventButton },
   data() {
    return  {
       terms: [],
@@ -12,6 +13,11 @@ export default {
   created() {
     this.terms = terms.data.terms
   },
+  methods: {
+    logWords() {
+      console.log('made it!')
+    }
+  }
 }
 </script>>
 
@@ -33,7 +39,9 @@ export default {
             />
           </div>
         </div>
-
+        <div class="test-histoire">
+          <EventButton @myEvent="logWords" />
+        </div>
       </section>
     </main>
   </div>
