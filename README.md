@@ -1,14 +1,24 @@
 # Vue3-mini
 
-A Vue 3 project with [Vite](https://vitejs.dev/), [Vutensils](https://vuetensils.com/), [Histoire](https://histoire.dev/), and [Playwright](https://playwright.dev/). This is currently my learning playground for FE technologies.
+A Vue 3 project with [Vite](https://vitejs.dev/), [Pinia](https://pinia.vuejs.org/), [Vutensils](https://vuetensils.com/), [Histoire](https://histoire.dev/), and [Playwright](https://playwright.dev/). This is currently my learning playground for FE technologies. 
 
-## Recommended IDE Setup
+Building out a mock site for a trucking transportation related org. Pinia is not being utilized yet.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Components:
 
-## Customize configuration
+  * Menu uses Vuetensils VDrawer to manage attributes `aria-haspopup` and `aria-expanded`  
+  * MenuLinks uses Vuetensils VBtn and a v-for to distrubute data and render `RouterLink` or `<a>` accordingly  
+  * Flashcard flips with CSS - plans to shift to a Pinia state  
+  * Service component wrapped in a `RouterLink`
+  
+## Current Views
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+  * HomeView path   `/`
+  * AboutView path    `/about`
+  * ServiceView path    `/services`
+      * JIT path    `/services/just-in-time`
+      * Heavy Haul & Flatbed path   `/services/special-equipment`
+
 
 ## Project Setup
 
