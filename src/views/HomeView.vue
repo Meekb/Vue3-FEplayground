@@ -13,6 +13,12 @@ export default {
   created() {
     this.terms = terms.data.terms
   },
+  methods: {
+    eventButtonTest(payload) {
+      console.log(payload.a + ' ', payload.b + '!')
+      return 0
+    },
+  }
 }
 </script>>
 
@@ -35,7 +41,7 @@ export default {
           </div>
         </div>
         <div class="test-histoire">
-          <EventButton @change="console.log('clicked!')" />
+          <EventButton @myEvent="eventButtonTest" />
         </div>
       </section>
     </main>

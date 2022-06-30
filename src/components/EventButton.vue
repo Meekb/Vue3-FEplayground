@@ -3,6 +3,7 @@ const a = 'Hello'
 const b = 'World'
 export default {
   name: 'EventButton',
+  emits: [ 'myEvent' ],
   methods: {
     sendEvent() {
       this.$emit('myEvent', { a, b })
