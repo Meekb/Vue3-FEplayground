@@ -19,6 +19,7 @@ Building out a mock site for a trucking transportation related org. Pinia is not
   * Service path    `/services`
       * JIT path    `/services/just-in-time`
       * Heavy Haul & Flatbed path   `/services/special-equipment`
+      * Reefer path    `/services/reefer`
 
 
 ## Project Setup
