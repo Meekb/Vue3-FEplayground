@@ -14,9 +14,9 @@ Building out a mock site for a trucking transportation related org. Pinia is not
   
 ## Current Views
 
-  * HomeView path   `/`
-  * AboutView path    `/about`
-  * ServiceView path    `/services`
+  * Home path   `/`
+  * About path    `/about`
+  * Service path    `/services`
       * JIT path    `/services/just-in-time`
       * Heavy Haul & Flatbed path   `/services/special-equipment`
 
