@@ -26,10 +26,10 @@ export default {
 <template>
   <RouterLink class="to" :to="`${routeTo}`">
     <article class="services w-96">
-      <div class="service-container flex flex-col border-2 text-center">
+      <div class="service-container flex flex-col text-center">
         <div class="service">
           <div class="service-name">
-            <h3 class="service-title font-bold text-xl">
+            <h3 class="service-title font-bold text-xl p-2">
               {{ serviceName }}
             </h3>
           </div>
@@ -39,7 +39,7 @@ export default {
             placeholder="http://placehold.jp/200x200.png"
             class="service-image"
           />
-          <p class="service-desc text-justify p-3 text-lg">
+          <p class="service-desc text-justify p-3 text-lg font-bold">
             {{ serviceDesc }}
           </p>
         </div>
@@ -52,14 +52,14 @@ export default {
 
 .services {
   background-color: #9BA3AF;
-  color: whitesmoke;
+  color: white;
 }
 .service-name {
   background-color: #9D012A;
 }
 .services:hover {
   border: 3px solid #9D012A;
-  transform: scale(0.99, 0.99);
+  transform: scale(1, 1);
 }
 .service-image {
   width: 200px;

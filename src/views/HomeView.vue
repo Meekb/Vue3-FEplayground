@@ -13,11 +13,6 @@ export default {
   created() {
     this.terms = terms.data.terms
   },
-  methods: {
-    logWords() {
-      console.log('made it!')
-    }
-  }
 }
 </script>>
 
@@ -40,7 +35,7 @@ export default {
           </div>
         </div>
         <div class="test-histoire">
-          <EventButton @myEvent="logWords" />
+          <EventButton @change="console.log('clicked!')" />
         </div>
       </section>
     </main>

@@ -25,13 +25,18 @@ const router = createRouter({
     {
       path: '/services/just-in-time',
       name: 'jit',
-      component: () => import('../views/JITView.vue')
+      component: () => import('../views/ServiceJIT.vue')
     },
     {
       path: '/services/special-equipment',
       name: 'heavy haul and flatbed',
-      component: () => import('../views/HHFServiceView.vue')
-    }
+      component: () => import('../views/ServiceSpEq.vue')
+    },
+    {
+      path: '/services/reefer',
+      name: 'refrigerated services',
+      component: () => import('../views/ServiceReefer.vue')
+    },
   ]
 })
 
