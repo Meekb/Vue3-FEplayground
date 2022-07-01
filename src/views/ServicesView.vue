@@ -27,12 +27,13 @@ export default {
           serviceDesc: 'Timely refrigerated deliveries with over 3000 reefer trailers.',
           routeTo: '/services/reefer'
         },
-        // {
-        //   serviceName: 'Intermodal & Port Services',
-        //   serviceImg: 'src/assets/container.jpg',
-        //   imageAlt: 'Intermodal',
-        //   serviceDesc: 'Twelve fleet divisons with TWIC® cards to service our nations ports.'
-        // }
+        {
+          serviceName: 'Intermodal & Port Services',
+          serviceImg: 'src/assets/container.jpg',
+          imageAlt: 'Intermodal',
+          serviceDesc: 'Twelve fleet divisons with TWIC® cards to service our nations ports.',
+          routeTo: '/services/intermodal'
+        }
       ]
     }
   },
@@ -46,7 +47,7 @@ export default {
     </div>
     <h3 class="text-center text-3xl font-bold">Our Services</h3>
     <p class="text-center text-lg m-5">Here are our services....</p>
-    <nav class="service-area flex justify-evenly">
+    <nav class="service-area flex flex-wrap justify-around">
       <Service 
         v-for="(service, i) in services"
         :key="i"

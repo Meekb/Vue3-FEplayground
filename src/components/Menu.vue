@@ -67,22 +67,12 @@ export default {
 
 .slide-right-enter-active,
 .slide-right-leave {
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: opacity 0.1s ease, transform 0.1s ease;
 }
 
 .slide-right-enter-active,
-.slide-right-leave-to-active {
+.slide-right-leave-to {
   opacity: 0;
   transform: translateX(-100%);
 }
-
-  /* .fade-enter-active,
-  .fade-leave-active {
-    transition: opacity 0.5s ease;
-  }
-  
-  .fade-enter,
-  .fade-leave-to {
-    opacity: 0;
-  } */
 </style>

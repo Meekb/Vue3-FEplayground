@@ -37,6 +37,11 @@ const router = createRouter({
       name: 'refrigerated services',
       component: () => import('../views/ServiceReefer.vue')
     },
+    {
+      path: '/services/intermodal',
+      name: 'intermodal and port services',
+      component: () => import('../views/ServiceContainer.vue')
+    },
   ]
 })
 

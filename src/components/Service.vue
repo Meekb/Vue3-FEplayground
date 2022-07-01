@@ -25,7 +25,7 @@ export default {
 
 <template>
   <RouterLink class="to" :to="`${routeTo}`">
-    <article class="services w-96">
+    <article class="services w-96 m-4">
       <div class="service-container flex flex-col text-center">
         <div class="service">
           <div class="service-name">
@@ -59,7 +59,7 @@ export default {
 }
 .services:hover {
   border: 3px solid #9D012A;
-  transform: scale(1, 1);
+  transform: scale(1.08, 1.08);
 }
 .service-image {
   width: 200px;
