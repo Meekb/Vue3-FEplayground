@@ -1,28 +1,30 @@
 <script setup>
-import { onMounted, ref  } from "@vue/runtime-core"
+import { ref, watch  } from "@vue/runtime-core"
 
+const textVisible = ref(false)
 
-
-  function isElInViewport() {
-    // text to animate
-    // const shakeText = ref(document.querySelector(".shake"))
-    // gets the window height
-    const windowHeight = ref(window.innerHeight)
-    // defines when to animate
-    const shakeVisible = ref(150)
-
-    const elTop = ref(document.querySelector(".shake").getBoundingClientRect().top)
-
-    if (elTop < windowHeight - shakeVisible) {
-      isInViewport.value = true
-    } else {
-      isInViewport.value = false
-    }
+function isElInViewport(  ) {
+  // text to animate
+  const shakeText = ref(document.querySelector(".shake"))
+  // gets the window height
+  const windowHeight = ref(window.innerHeight)
+  // defines when to animate
+  const shakeVisible = ref(150)
+  const elTop = ref(document.querySelector(".shake").getBoundingClientRect().top)
+  if (elTop < windowHeight - shakeVisible) {
+    textVisible.value = true
   }
+}
+// single ref
+watch(textVisible, (textVisible) => {
+  console.log(textVisible.value)
+  // shakeText.classList.add(".v-enter-active")
+})
+
 </script>
 
 <template>
-  <div class="text-motion-component">
+  <div @scroll="isElementInViewport" class="text-motion-component">
     <div
       class="
         text-motion__background-container
@@ -47,7 +49,7 @@ import { onMounted, ref  } from "@vue/runtime-core"
   background: linear-gradient(180deg, hsla(344, 99%, 31%, 1) 0%, hsla(344, 64%, 79%, 1) 100%, hsla(343, 93%, 69%, 1) 100%);
 }
 .v-enter-active {
-  animation: vertical-shaking 2s;
+  animation: vertical-shaking 1s;
 }
 /* @keyframes tilt-shaking {
   0% { transform: rotate(0deg); }
