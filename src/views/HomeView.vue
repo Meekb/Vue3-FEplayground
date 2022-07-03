@@ -1,24 +1,18 @@
-<script>
+<script setup>
+import { onMounted, ref } from 'vue'
 import Hero from '@/components/Hero.vue'
 import Flashcard from '@/components/Flashcard.vue'
-import terms from '@/assets/terms.json'
-import EventButton from '../components/EventButton.vue'
-export default {
-  components: { Hero, Flashcard, EventButton },
-  data() {
-   return  {
-      terms: [],
-    }
-  },
-  created() {
-    this.terms = terms.data.terms
-  },
-  methods: {
-    eventButtonTest(payload) {
-      console.log(payload.a + ' ', payload.b + '!')
-      return 0
-    },
-  }
+import EventButton from '@/components/EventButton.vue'
+import TextMotion from '@/components/TextMotion.vue'
+import flashcardData from '@/assets/terms.json'
+const components = { Hero, Flashcard, EventButton, TextMotion }
+const terms = ref([])
+onMounted(() => {
+  terms.value = flashcardData.data.terms
+})
+function eventButtonTest(payload) {
+  console.log(payload.a + ' ', payload.b + '!')
+  return 0
 }
 </script>>
 
@@ -41,7 +35,12 @@ export default {
           </div>
         </div>
         <div class="test-histoire">
-          <EventButton @myEvent="eventButtonTest" />
+          <div class="text-motion pt-10">
+            <TextMotion />
+          </div>
+          <div class="event-button p-5">
+            <EventButton @myEvent="eventButtonTest" />
+          </div>
         </div>
       </section>
     </main>

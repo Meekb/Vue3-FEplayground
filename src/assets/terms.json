@@ -56,6 +56,14 @@
       {
         "term": "Hours-of-Service",
         "definition": "US Department of Transportation safety regulations which govern the hours of service of commercial vehicle drivers engaged in interstate trucking operations."
+      },
+      {
+        "term": "Axle",
+        "definition": "The steel shaft connecting wheels on opposite sides of a vehicle."
+      },
+      {
+        "term": "Backhaul",
+        "definition": "A return load that will get a driver back home or close to their company's terminal."
       }
     ]
   }

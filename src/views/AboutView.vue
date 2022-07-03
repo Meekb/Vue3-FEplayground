@@ -7,17 +7,21 @@ export default {
     return {
       faqs: [
         {
-          question: 'What came first, the chicken or the egg?',
-          answer: 'Elliphino...',
-        },
-        {
-          question: 'Who put the bop in the bop shabop shabop?',
-          answer: 'Sergeant Burgermarpher in 1922 at a Brooklyn speakeasy.'
+          question: 'What states do you operate in?',
+          answer: 'We offer services throughout the Lower 48.',
         },
         { 
-          question: 'Where does a general keep their armies?',
-          answer: 'Up their sleevies.',
-        }
+          question: 'Do you haul hazardous material (hazmat)?',
+          answer: 'Yes. Reach out to our shipping specialists at 555-555-5555 to discuss your transport needs.',
+        },
+        {
+          question: 'Is a frozen or refrigerated shipment more expensive than regular freight?',
+          answer: 'Yes, because of the equipment needed to keep the product frozen or refrigerated.'
+        },
+        {
+          question: 'Do your drivers help unload?',
+          answer: 'Our drivers can assist the unload at the customer\'s request. There is an additional fee for a driver assist unload.'
+        },
       ],
     }
   },
@@ -25,7 +29,7 @@ export default {
 </script>
 
 <template>
-  <div class="about flex flex-col bg-lime-100">
+  <div class="about flex flex-col h-screen">
     <div class="w-full flex justify-start bg-gray-400">
       <Menu />
     </div>

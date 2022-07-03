@@ -22,7 +22,7 @@ export default {
     type="text"
   >
   <button @click="sendEvent">
-    Send
+    Event Button for story
   </button>
 </template>
 

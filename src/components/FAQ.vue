@@ -12,15 +12,8 @@ const props = defineProps(
 </script>
 
 <template>
-  <!-- <div class="faq text-lg w-full border-2 border-black text-center m-1 p-3">
-    <VToggle :label="question" class="styled" :disabled="this.isOpen">
-      <div class="toggle-content">
-        <p>{{ answer }}</p>
-      </div>
-    </VToggle>
-  </div> -->
 
-  <div class="faq text-lg w-full border-2 border-black text-center m-1 p-3">
+  <div class="faq text-lg text-white font-bold w-full border-2 border-white text-center">
      <VToggle>
 
       <template #label="{ isOpen }">
@@ -33,9 +26,11 @@ const props = defineProps(
       </template>
       
       <template #default="{ isOpen }">
-        <p class="answer border-2 border-black p-4">
-          {{ answer }}
-        </p>
+        <div>
+          <p class="answer border-1 border-black p-4 bg-white text-black">
+            {{ answer }}
+          </p>
+        </div>
       </template>
     </VToggle>
   </div>
@@ -56,5 +51,9 @@ const props = defineProps(
   align-content: center;
   border: 1px solid #CCC;
   padding: 5px;
+}
+
+.faq {
+  background-color: #9D012A;
 }
 </style>
