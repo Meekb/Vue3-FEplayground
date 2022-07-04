@@ -33,7 +33,7 @@ export default {
 </script>
 
 <template>
-  <div @scroll="isElementInViewport" class="text-motion-component pt-10">
+  <div class="text-motion-component pt-10">
     <div
       ref="target"
       class="
