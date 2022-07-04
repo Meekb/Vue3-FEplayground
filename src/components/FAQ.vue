@@ -13,13 +13,13 @@ const props = defineProps(
 
 <template>
   <div class="faq text-lg text-white font-bold w-full text-center">
-    <VToggle class="border-2 border-black">
+    <VToggle class="border border-gray-400">
 
       <template #label="{ isOpen }">
-        <span>
-          {{ isOpen ? "🔼" : "🔽" }}
+        <span class="text-3xl">
+          {{ isOpen ? "^" : "&#8964;" }}
         </span>
-        <p>
+        <p class="pb-3">
           {{ question }}
         </p>
       </template>

@@ -38,7 +38,7 @@ function eventButtonTest(payload) {
           <TextMotion>
             <p><strong>Diesel Particulate Filter</strong> the aluminum hauler. Steel empty <strong>cargo van</strong> was fixed by the wheelbase. The semi truck by backhaul dispatch. Forklift turbo bill of lading.</p>
           </TextMotion>
-          <div class="event-button p-5">
+          <div class="event-button">
             <EventButton @myEvent="eventButtonTest" />
           </div>
         </div>
@@ -89,5 +89,3 @@ function eventButtonTest(payload) {
   }
 }
 </style>
-
-<!-- w-full grid grid-cols-4 p-1 gap-y-1 gap-x-1 -->
