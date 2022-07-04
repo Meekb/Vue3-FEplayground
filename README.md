@@ -11,7 +11,7 @@ Building out a mock site for a trucking transportation related org. Pinia is not
   * Menu uses Vuetensils VDrawer to manage attributes `aria-haspopup` and `aria-expanded`  
   * MenuLinks uses Vuetensils VBtn and a v-for to render `RouterLink` or `<a>` accordingy to data passed in
   * Service component wrapped in a `RouterLink` for navigation to service types
-  * TextMotion component with slot is animated as the component enters and exits the viewport (using Javascript)
+  * TextMotion with slot is animated each time the component enters the viewport (using Javascript)
   
 ## Current Views
 
