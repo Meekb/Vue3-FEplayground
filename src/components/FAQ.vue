@@ -12,9 +12,8 @@ const props = defineProps(
 </script>
 
 <template>
-
-  <div class="faq text-lg text-white font-bold w-full border-2 border-white text-center">
-     <VToggle>
+  <div class="faq text-lg text-white font-bold w-full text-center">
+    <VToggle class="border-2 border-black">
 
       <template #label="{ isOpen }">
         <span>
@@ -27,14 +26,13 @@ const props = defineProps(
       
       <template #default="{ isOpen }">
         <div>
-          <p class="answer border-1 border-black p-4 bg-white text-black">
+          <p class="answer p-4 bg-white text-black">
             {{ answer }}
           </p>
         </div>
       </template>
     </VToggle>
   </div>
-
 </template>
 
 <style scoped>

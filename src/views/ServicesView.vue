@@ -24,7 +24,7 @@ export default {
           serviceName: 'Reefer',
           serviceImg: 'src/assets/reefer.jpg',
           imageAlt: 'Refrigerated trailers in a dock',
-          serviceDesc: 'Timely refrigerated deliveries with over 3000 reefer trailers.',
+          serviceDesc: 'Timely refrigerated deliveries with over 1500 reefer trailers.',
           routeTo: '/services/reefer'
         },
         {

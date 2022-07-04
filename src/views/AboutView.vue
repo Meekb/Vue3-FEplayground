@@ -35,16 +35,21 @@ export default {
     </div>
     <h1 class="text-center text-3xl font-bold">About Page</h1>
     <p class="text-center text-lg m-5">
-      <FAQ
-        v-for="(item, i) in faqs"
-        :key="i"
-        :question="item.question"
-        :answer="item.answer"
-      />
+      <div class="faq-container">
+        <FAQ
+          v-for="(item, i) in faqs"
+          :key="i"
+          :question="item.question"
+          :answer="item.answer"
+        />
+      </div>
     </p>
   </div>
 </template>
 
-<style>
-
+<style scoped>
+.faq-container {
+  /* background-color: #5F0219; */
+  border: 2px solid #9BA3AF;
+}
 </style>

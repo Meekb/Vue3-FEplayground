@@ -35,9 +35,9 @@ function eventButtonTest(payload) {
           </div>
         </div>
         <div class="test-histoire">
-          <div class="text-motion pt-10">
-            <TextMotion />
-          </div>
+          <TextMotion>
+            <p><strong>Diesel Particulate Filter</strong> the aluminum hauler. Steel empty <strong>cargo van</strong> was fixed by the wheelbase. The semi truck by backhaul dispatch. Forklift turbo bill of lading.</p>
+          </TextMotion>
           <div class="event-button p-5">
             <EventButton @myEvent="eventButtonTest" />
           </div>
