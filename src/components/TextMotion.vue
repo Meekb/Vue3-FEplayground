@@ -6,7 +6,7 @@ export default {
     animationType: {
       type: String,
       required: false,
-      default: 'shake'
+      default: 'shake' // using default, nothing passed into component
     }
   },
   setup() {
