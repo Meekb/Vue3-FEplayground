@@ -9,7 +9,7 @@ Building out a mock site for a trucking transportation related org. Pinia is not
   * Hero made with [Hero Generator](https://hero-generator.netlify.app/)
   * Flashcard flips with CSS - plans to shift to a Pinia state
   * Menu uses Vuetensils VDrawer to manage attributes `aria-haspopup` and `aria-expanded`  
-  * MenuLinks uses Vuetensils VBtn and a v-for to render `RouterLink` or `<a>` accordingy to data passed in
+  * MenuLinks uses Vuetensils VBtn and a v-for to render `RouterLink` or `<a>` according to data passed in
   * Service component wrapped in a `RouterLink` for navigation to service types
   * TextMotion with slot is animated each time the component enters the viewport (using Javascript)
   
